@@ -11,18 +11,19 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(express.json());
-app.use(cors({
-    origin: 'https://mellow-travesseiro-706987.netlify.app/'  // Replace with your actual Netlify URL
-  }
+app.use(cors());
+//app.use(cors({
+ //   origin: 'https://mellow-travesseiro-706987.netlify.app/'  // Replace with your actual Netlify URL
+ // }
 
-));
+//));
 
 const MONGO_URL = 
 "mongodb+srv://ranjanirithu206:KS0pwc1jwcIxmZu0@cluster0.8mgcr.mongodb.net/MEAN?retryWrites=true&w=majority";
 
 // MongoDB connection
-mongoose.connect(MONGO_URL,
-    { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(MONGO_URL)
+    //{ useNewUrlParser: true, useUnifiedTopology: true })
     //{
         //serverSelectionTimeoutMS: 30000,
     //})
