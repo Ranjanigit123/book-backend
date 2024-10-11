@@ -21,8 +21,8 @@ const MONGO_URL =
 "mongodb+srv://ranjanirithu206:KS0pwc1jwcIxmZu0@cluster0.8mgcr.mongodb.net/MEAN?retryWrites=true&w=majority";
 
 // MongoDB connection
-mongoose.connect(MONGO_URL)
-    //{ useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(MONGO_URL,
+    { useNewUrlParser: true, useUnifiedTopology: true })
     //{
         //serverSelectionTimeoutMS: 30000,
     //})
